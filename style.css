@@ -4,7 +4,7 @@ body {
 }
 
 .container {
-  width: 300px;
+  width: 400px;
   margin: 50px auto;
   background: #fff;
   padding: 20px;
@@ -12,7 +12,7 @@ body {
   box-shadow: 0 0 10px rgba(0,0,0,0.1);
 }
 
-h2 {
+h2, h3 {
   text-align: center;
 }
 
@@ -49,4 +49,21 @@ button:hover {
 #mensagem {
   margin-top: 15px;
   text-align: center;
+  font-weight: bold;
+}
+
+#listaUsuarios table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+#listaUsuarios th, #listaUsuarios td {
+  border: 1px solid #ccc;
+  padding: 8px;
+  text-align: left;
+}
+
+#listaUsuarios th {
+  background-color: #f2f2f2;
 }
