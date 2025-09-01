@@ -83,3 +83,5 @@ mv /Hospedando-uma-Pagina-Web-com-AWS/scrypt.js /var/www/html
 mv /Hospedando-uma-Pagina-Web-com-AWS/process.php /var/www/html
 systemctl restart apache2
 
+
+#A aplicação rodou, mostrou a pagina tudo correto, porém pela falta de experiencia em php, eu não consegui estabelecer uma conexão entre o backend e o banco de dados.
