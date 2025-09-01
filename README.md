@@ -1,9 +1,9 @@
 #Atualiza o gerenciador de pacotes apt.
-'sudo apt upgrade -y'
+sudo apt upgrade -y
 
 #Instala o php-mysqli,php-json e php-devel
-'sudo apt-get install php8.2-mysql'
-'sudo apt install  wget php8.3-cli php libapache2-mod-php'
+sudo apt-get install php8.2-mysql
+sudo apt install  wget php8.3-cli php libapache2-mod-php
 
 #Adicionamos o repositório do php-fpm
 sudo add-apt-repository ppa:ondrej/php
