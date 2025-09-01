@@ -68,3 +68,8 @@ sudo nano /etc/apache2/sites-available/default-ssl.conf
 #No arquivo Mude Esses dois parametros para esses dois valores:
 SSLCertificateFile /etc/ssl/certs/apache-selfsigned.crt
 SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key 
+
+#Instalamos git na nossa instancia
+sudo apt install git
+
+#
