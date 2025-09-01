@@ -3,10 +3,18 @@ const mensagem = document.getElementById('mensagem');
 const listaUsuarios = document.getElementById('listaUsuarios');
 
 // Função para carregar lista de usuários
+// JS: script.js (função modificada)
+
 function carregarUsuarios() {
   fetch('process.php')
     .then(response => response.json())
     .then(data => {
+      // VERIFICAÇÃO ADICIONADA: Checa se a resposta tem a propriedade "error"
+      if (data.error) {
+        listaUsuarios.innerHTML = `<p>Erro vindo do servidor: ${data.error}</p>`;
+        return;
+      }
+
       if (data.length === 0) {
         listaUsuarios.innerHTML = '<p>Nenhum usuário cadastrado.</p>';
         return;
@@ -21,7 +29,8 @@ function carregarUsuarios() {
       listaUsuarios.innerHTML = tabela;
     })
     .catch(() => {
-      listaUsuarios.innerHTML = '<p>Erro ao carregar usuários.</p>';
+      // Este catch agora pegará erros de rede ou JSON inválido
+      listaUsuarios.innerHTML = '<p>Erro de comunicação ao carregar usuários.</p>';
     });
 }
 
