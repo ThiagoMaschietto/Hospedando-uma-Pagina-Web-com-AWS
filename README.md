@@ -28,6 +28,8 @@ sudo systemctl is-enabled apache2
 
 #Na pagina Web Caso não funcione troque o protocolo na url por HTTP
 #A Imagem a ser mostrada deve ser algo parecido com isso
+<img width="874" height="942" alt="image" src="https://github.com/user-attachments/assets/f801f982-8cd1-455f-872e-fe679decfc05" />
+
 
 CONFIGURAÇÃO DA INSTANCIA NO AWS
 #Criamos o Grupo Apache
