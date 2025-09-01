@@ -72,4 +72,14 @@ SSLCertificateKeyFile /etc/ssl/private/apache-selfsigned.key
 #Instalamos git na nossa instancia
 sudo apt install git
 
-#
+#Damos um git clone no nosso repositorio atual que no caso é https://github.com/ThiagoMaschietto/Hospedando-uma-Pagina-Web-com-AWS
+git clone https://github.com/ThiagoMaschietto/Hospedando-uma-Pagina-Web-com-AWS
+
+#Removemos o index.html padrão e depois Movemos todo o conteudo do diretorio baixado para a pasta /var/www/html, e reiciamos o apache2
+rm /var/www/html/index.html
+mv /Hospedando-uma-Pagina-Web-com-AWS/index.html /var/www/html
+mv /Hospedando-uma-Pagina-Web-com-AWS/style.css /var/www/html
+mv /Hospedando-uma-Pagina-Web-com-AWS/scrypt.js /var/www/html
+mv /Hospedando-uma-Pagina-Web-com-AWS/process.php /var/www/html
+systemctl restart apache2
+
